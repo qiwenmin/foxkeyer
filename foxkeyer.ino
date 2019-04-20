@@ -18,12 +18,14 @@ License along with this program.  If not, see
 #include <avr/pgmspace.h>
 
 #define CW_WPM (15)
-#define IDLE_MS (5000)
+#define IDLE_MS (500)
 
 const char msg[] PROGMEM = {
-  "_.. .  "                   // DE
-  "_... __. .____ ._. . _.  " // BG1REN
-  ".._. ___ _.._  .____  _._  "   // FOX 1 K
+  "__ ___ .  "      // MOE
+//  "__ ___ ..  "     // MOI
+//  "__ ___ ...  "    // MOS
+//  "__ ___ ....  "   // MOH
+//  "__ ___ ......  " // MO5
 };
 
 #define KEY_PIN (1)
