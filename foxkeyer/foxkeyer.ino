@@ -28,7 +28,13 @@ const char msg[] PROGMEM = {
 //  "__ ___ ......  " // MO5
 };
 
+#ifdef BOARD_generic_stm32f103c
+#define KEY_PIN (PC13)
+#elif ARDUINO_AVR_DIGISPARK
 #define KEY_PIN (1)
+#else
+#define KEY_PIN LED_BUILTIN
+#endif // BOARD_generic_stm32f103c
 
 #define E_DURATION (1200 / CW_WPM)
 
