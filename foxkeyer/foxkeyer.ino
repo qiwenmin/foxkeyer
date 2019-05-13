@@ -28,7 +28,7 @@ const char msg[] PROGMEM = {
 //  "__ ___ ......  " // MO5
 };
 
-#ifdef BOARD_generic_stm32f103c
+#ifdef ARDUINO_BLUEPILL_F103C8
 #define KEY_PIN (PC13)
 #elif ARDUINO_AVR_DIGISPARK
 #define KEY_PIN (1)

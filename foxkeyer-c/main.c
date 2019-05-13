@@ -39,7 +39,11 @@ const char msg[] = {
 
 #include <Arduino.h>
 
+#ifdef ARDUINO_BLUEPILL_F103C8
+#define KEY_PIN (PC13)
+#elif ARDUINO_AVR_DIGISPARK
 #define KEY_PIN (1)
+#endif 
 
 #define GET_MSG_CHAR(p) pgm_read_byte_near(p)
 
